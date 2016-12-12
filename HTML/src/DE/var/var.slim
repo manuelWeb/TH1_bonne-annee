@@ -1,0 +1,38 @@
+/### ID rayon + txtPreHeader + $campaign
+-$title     = "Alles für eine weihnachtliche Festtagstafel…"
+-$txtheader = "Entdecken Sie alle unsere Ideen für ein weihnachtliches Festessen "
+-$mirorLink = "http://tempsl.com/Newsletters/miroir/#{$miror}/DE/index.htm"
+/### do not change content link
+-$url       ="http://www.ideascomfort.de/de/"
+-$index     ="index.aspx"
+-$srcmedium =["?utm_source=NL&utm_medium=email","&utm_source=NL&utm_medium=email"]
+-$content   =["&utm_content=","url","garantie","livraison","paiement","cgv","contact","desabo","mentions_legales"]
+/### do not change footer
+-$haconfiance=["achat_confiance/","garanties.aspx","informations-livraison.aspx","paiement-securise.aspx","conditions-generales-de-vente.aspx","mentions-legales.aspx"]
+/### do not change mentions
+-$contactdesabo=["ideascomfort_and_you/contact.aspx?val=A","animation/DesinscriptionNewsletter.aspx"]
+/ compact
+/ -urlpathpage = "kuche/kochgerate/einfallsreicher-express-garer/2585313.html"
+-rayon      = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
+-urlRay     = "#{$url}#{rayon}#{$IDray[:de]}#{$srcmedium[1]}#{$content[0]}"
+-pdt    = ["0", "heim-dekoration/weihnachtsdeko/vorgefaltete-weihnachtsstern-servietten-rot/0951319.html", "heim-dekoration/weihnachtsdeko/perlen-lichterkette-led/0904318.html", "kuche/besteck-messer/mini-aperitifgabeln/9667312.html"]
+
+/### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
+- $s1c1_accroche = "#{urlRay}accroche#{$campaign}"
+- $s1c2_logo     = "#{$url}index.aspx#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+- $s2_accroche   = "#{urlRay}accroche#{$campaign}"
+- $s3_pdtbg      = "#{urlRay}vedette#{$campaign}"
+- $s4c1_pd1      = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c2_pd2      = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c3_pd3      = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s5_btn        = "#{urlRay}bouton#{$campaign}"
+
+/ alt + title
+- $alt_s1c1_accroche = "Alles für eine weihnachtliche Festtagstafel"
+- $alt_s1c2_logo     = "IDEAS Comfort"
+- $alt_s2_accroche   = ""
+- $alt_s3_pdtbg      = "LED-Dekostern"
+- $alt_s4c1_pd1      = "Vorgefaltete Weihnachtsstern- Servietten, rot"
+- $alt_s4c2_pd2      = "Perlen-Lichterkette LED"
+- $alt_s4c3_pd3      = "Mini-Aperitifgabeln"
+- $alt_s5_btn        = " Entdecken Sie unser Sortiment!"

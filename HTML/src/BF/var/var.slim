@@ -1,0 +1,35 @@
+/### ID rayon + txtPreHeader + $campaign
+-$title     = "Quand Noël se met à table !"
+-$txtheader = "Découvrez toutes nos idées pour vos plus beaux repas de fête"
+-$mirorLink = "http://tempsl.com/Newsletters/miroir/#{$miror}/BEFR/index.htm"
+/### do not change content link
+-$url           ="http://www.ideascomfort.be/befr/"
+-$index         ="index.aspx"
+-$srcmedium     =["?utm_source=NL&utm_medium=email","&utm_source=NL&utm_medium=email"]
+-$content       =["&utm_content=","url","garantie","livraison","paiement","cgv","contact","desabo"]
+-$haconfiance   =["achat_confiance/","garanties.aspx","informations-livraison.aspx","paiement-securise.aspx","conditions-generales-de-vente.aspx"]
+-$contactdesabo =["ideascomfort_and_you/contact.aspx?val=A","animation/DesinscriptionNewsletter.aspx"]
+/ compact
+-rayon  = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
+-urlRay = "#{$url}#{rayon}#{$IDray[:bf]}#{$srcmedium[1]}#{$content[0]}"
+-pdt    = ["0", "maison-deco/no-l/serviettes-poinsettia-prepliees-rouges/0951319.html", "maison-deco/no-l/guirlande-perles-led/0904318.html", "cuisine/couverts-couteaux/mini-fourchettes-aperitif/9667312.html"]
+
+/### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
+- $s1c1_accroche = "#{urlRay}accroche#{$campaign}"
+- $s1c2_logo     = "#{$url}index.aspx#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+- $s2_accroche   = "#{urlRay}accroche#{$campaign}"
+- $s3_pdtbg      = "#{urlRay}vedette#{$campaign}"
+- $s4c1_pd1      = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c2_pd2      = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c3_pd3      = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s5_btn        = "#{urlRay}bouton#{$campaign}"
+
+/ alt + title
+- $alt_s1c1_accroche = "Quand Noël se met à table !"
+- $alt_s1c2_logo     = "TEMPS L"
+- $alt_s2_accroche   = ""
+- $alt_s3_pdtbg      = "Décoration étoile LED"
+- $alt_s4c1_pd1      = "12 Serviettes poinsettia prépliées rouges"
+- $alt_s4c2_pd2      = "Guirlande de perles LED"
+- $alt_s4c3_pd3      = "Mini fourchettes apéritif"
+- $alt_s5_btn        = "Retrouvez notre sélection à prix de fête !"

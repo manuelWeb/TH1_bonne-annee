@@ -1,0 +1,38 @@
+/### ID rayon + txtPreHeader + $campaign
+-$title     = "Christmas Dinner is served!"
+-$txtheader = "Discover all of our items to make your festive meal extra special this Christmas"
+-$mirorLink = "http://tempsl.com/Newsletters/miroir/#{$miror}/UK/index.htm"
+/### do not change content link
+-$url       ="http://www.ideascomfort.co.uk/uk/";
+-$index     ="index.aspx";
+-$srcmedium =["?utm_source=NL&utm_medium=email","&utm_source=NL&utm_medium=email"];
+-$content   =["&utm_content=","url","garantie","livraison","paiement","contact","desabo","CGV"];
+/### do not change footer
+-$haconfiance =["achat_confiance/","garanties.aspx","informations-livraison.aspx","paiement-securise.aspx","conditions-generales-de-vente.aspx"];
+/### do not change mentions
+-$contactdesabo=["ideascomfort_and_you/contact.aspx?val=A","animation/DesinscriptionNewsletter.aspx"];
+/ compact
+/ -urlpathpage = "kitchen/cookware/special-offer-express-smart-cooker/2956316.html"
+-rayon      = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
+-urlRay     = "#{$url}#{rayon}#{$IDray[:uk]}#{$srcmedium[1]}#{$content[0]}"
+-pdt    = ["0", "home-decoration/christmas/red-pre-folded-poinsettia-serviettes/0951319.html", "home-decoration/christmas/led-christmas-lights-with-beads/0904318.html", "kitchen/cutlery-knives/mini-aperitif-forks/9667312.html"]
+
+/### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
+- $s1c1_accroche = "#{urlRay}accroche#{$campaign}"
+- $s1c2_logo     = "#{$url}index.aspx#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+- $s2_accroche   = "#{urlRay}accroche#{$campaign}"
+- $s3_pdtbg      = "#{urlRay}vedette#{$campaign}"
+- $s4c1_pd1      = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c2_pd2      = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c3_pd3      = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s5_btn        = "#{urlRay}bouton#{$campaign}"
+
+/ alt + title
+- $alt_s1c1_accroche = "Christmas Dinner is served"
+- $alt_s1c2_logo     = "IDEAS Comfort"
+- $alt_s2_accroche   = ""
+- $alt_s3_pdtbg      = "LED star decoration"
+- $alt_s4c1_pd1      = "Red pre-folded poinsettia serviettes"
+- $alt_s4c2_pd2      = "LED Christmas lights with beads"
+- $alt_s4c3_pd3      = "Mini aperitif forks"
+- $alt_s5_btn        = "Discover our selection!"

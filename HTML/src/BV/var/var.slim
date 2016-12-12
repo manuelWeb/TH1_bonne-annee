@@ -1,0 +1,38 @@
+/### ID rayon + txtPreHeader + $campaign
+-$title     = "Wanneer kerst aan tafel gaat…"
+-$txtheader = "Ontdek al onze ideeën voor uw mooiste feestmaaltijden"
+-$mirorLink = "http://tempsl.com/Newsletters/miroir/#{$miror}/BEVL/index.htm"
+/### do not change content link
+-$url       ="http://www.ideascomfort.be/bevl/"
+-$index     ="index.aspx"
+-$srcmedium =["?utm_source=NL&utm_medium=email","&utm_source=NL&utm_medium=email"]
+-$content   =["&utm_content=","url","garantie","livraison","paiement","cgv","contact","desabo"]
+/### do not change footer
+-$haconfiance=["achat_confiance/","garanties.aspx","informations-livraison.aspx","paiement-securise.aspx","conditions-generales-de-vente.aspx"]
+/### do not change mentions
+-$contactdesabo=["ideascomfort_and_you/contact.aspx?val=A","animation/DesinscriptionNewsletter.aspx"]
+/ compact
+/ -urlpathpage = "keuken/keukenapparatuur/koekenpan-grill-en-oven-in-een-apparaat/2585313.html"
+-rayon      = "boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id="
+-urlRay     = "#{$url}#{rayon}#{$IDray[:bv]}#{$srcmedium[1]}#{$content[0]}"
+-pdt    = ["0", "huis-decoratie/kerstversiering/voorgevouwen-servetten-met-rode-kerststerren/0951319.html", "huis-decoratie/kerstversiering/led-parelslinger/0904318.html", "keuken/bestek-messen/aperitiefvorkjes/9667312.html"]
+
+/### content link ["logo", "accroche", "pdt", "prix", "bouton" ]
+- $s1c1_accroche = "#{urlRay}accroche#{$campaign}"
+- $s1c2_logo     = "#{$url}index.aspx#{$srcmedium[0]}#{$content[0]}logo#{$campaign}"
+- $s2_accroche   = "#{urlRay}accroche#{$campaign}"
+- $s3_pdtbg      = "#{urlRay}vedette#{$campaign}"
+- $s4c1_pd1      = "#{$url}#{pdt[1]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c2_pd2      = "#{$url}#{pdt[2]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s4c3_pd3      = "#{$url}#{pdt[3]}#{$srcmedium[0]}#{$content[0]}pdt#{$campaign}"
+- $s5_btn        = "#{urlRay}bouton#{$campaign}"
+
+/ alt + title
+- $alt_s1c1_accroche = "Wanneer kerst aan tafel gaat"
+- $alt_s1c2_logo     = "IDEAS Comfort"
+- $alt_s2_accroche   = ""
+- $alt_s3_pdtbg      = "Led-decoratiester"
+- $alt_s4c1_pd1      = "Voorgevouwen servetten met rode"
+- $alt_s4c2_pd2      = "Led-parelslinger"
+- $alt_s4c3_pd3      = "Aperitiefvorkjes"
+- $alt_s5_btn        = "Ontdek snel de selectie"
